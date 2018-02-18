@@ -1,0 +1,5 @@
+.Rproj.user
+packrat/lib*
+packrat/src
+*.jar
+*.log
