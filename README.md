@@ -17,6 +17,20 @@ You can check your Java version by running `java -version` in the terminal.
 Finally, you will also need to download [ShinyProxy](https://www.shinyproxy.io/downloads/) which is essentially just a single `jar` file.
 Copy this jar file (e.g. `shinyproxy-1.0.2.jar`) into the project's root directory.
 
+## Setup project
+Clone the repository:
+```
+git clone https://github.com/nz-stefan/shinyproxy-deployment.git
+```
+
+Open an R session (e.g. using RStudio) in the project's root directory to download all package dependencies.
+You should be able to run the Shiny app from within the R session:
+
+```
+shiny::runApp("app")
+```
+
+
 ## Containerize Shiny app
 ShinyProxy requires your Shiny app to be encapsulated in a Docker container.
 The container is defined by the `Dockerfile` in the root directory of this project.
