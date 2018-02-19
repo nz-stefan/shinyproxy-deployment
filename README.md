@@ -1,7 +1,7 @@
 # shinyproxy-deployment
 Example how to deploy a Shiny app through shinyproxy
 
-# Setup 
+## Setup 
 Install docker for your OS by following the instructions [here](https://docs.docker.com/install/).
 
 If you are running OSX, you will also need to install `socat` as described in the issue [here](https://github.com/openanalytics/shinyproxy/issues/20).
@@ -17,7 +17,7 @@ You can check your Java version by running `java -version` in the terminal.
 Finally, you will also need to download [ShinyProxy](https://www.shinyproxy.io/downloads/) which is essentially just a single `jar` file.
 Copy this jar file (e.g. `shinyproxy-1.0.2.jar`) into the project's root directory.
 
-# Containerize Shiny app
+## Containerize Shiny app
 ShinyProxy requires your Shiny app to be encapsulated in a Docker container.
 The container is defined by the `Dockerfile` in the root directory of this project.
 
@@ -37,7 +37,7 @@ bin/run-local-docker.sh
 ```
 Then point your browser to [http://0.0.0.0:3838](http://0.0.0.0:3838) to see your application in action.
 
-# Run ShinyProxy
+## Run ShinyProxy
 ShinyProxy is responsible to spin up Shiny containers.
 The Docker image to spin up for a particular Shiny app is specified in the `apps` section of the configuration file `application.yml`.
 
